@@ -2,7 +2,7 @@ services:
   minidlna:
     image: cytomich/rpi-docker-minidlna
     volumes:
-      - /mnt/ext/av:/media
+      - /mnt/ext/av/:/media
     environment:
       - MINIDLNA_MEDIA_DIR=/media
       - MINIDLNA_PORT=8200
